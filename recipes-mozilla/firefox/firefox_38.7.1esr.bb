@@ -3,7 +3,7 @@
 
 DESCRIPTION ?= "Browser made by mozilla"
 DEPENDS += "alsa-lib curl startup-notification libevent cairo libnotify libvpx \
-            virtual/libgl nss nspr pulseaudio yasm-native icu"
+            nss nspr pulseaudio yasm-native icu"
 
 LICENSE = "MPLv1 | GPLv2+ | LGPLv2.1+"
 LIC_FILES_CHKSUM = "file://toolkit/content/license.html;endline=39;md5=f7e14664a6dca6a06efe93d70f711c0e"
@@ -119,4 +119,4 @@ PRIVATE_LIBS += " \
 # |                  from /home/jenkins/oe/world/shr-core/tmp-glibc/work/i586-oe-linux/firefox/38.7.1esr-r0/mozilla-esr38/firefox-build-dir/gfx/graphite2/src/Unified_cpp_gfx_graphite2_src0.cpp:11:
 # | /home/jenkins/oe/world/shr-core/tmp-glibc/sysroots/qemux86/usr/include/c++/6.1.1/stdlib.h:38:12: error: 'std::abort' has not been declared
 # |  using std::abort;
-PNBLACKLIST[firefox] ?= "BROKEN: fails to build with gcc-6"
+#PNBLACKLIST[firefox] ?= "BROKEN: fails to build with gcc-6"

@@ -60,7 +60,7 @@ do_install() {
 	done
 
 	# Chromium *.pak files and CEF pak files (prefixed with cef_)
-	for f in content_resources.pak keyboard_resources.pak chrome_100_percent.pak product_logo_48.png resources.pak \
+	for f in content_resources.pak keyboard_resources.pak chrome_100_percent.pak chrome_200_percent.pak product_logo_48.png resources.pak \
 	         cef_100_percent.pak cef_200_percent.pak cef_resources.pak cef.pak \
 		 locales/en-US.pak; do
 		if [ -f "${B}/out/${CHROMIUM_BUILD_TYPE}/$f" ]; then
